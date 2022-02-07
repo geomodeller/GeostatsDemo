@@ -1,0 +1,12 @@
+#!/bin/bash
+#MSUB -A cbronze
+#MSUB -l nodes=1
+#MSUB -l partition=syrah
+#MSUB -l walltime=01:00:00
+#MSUB -q pbatch
+#MSUB -m be
+#MSUB -V
+#MSUB -o myjob.out.%j
+
+##### These are shell commands
+python Main_GatherFile.py > main.out
